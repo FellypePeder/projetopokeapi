@@ -1,0 +1,27 @@
+.footer-tela{
+    position: sticky;
+    .minhas-redes-sociais{
+        display: flex;
+        justify-content: center;
+
+    }
+    .footer-pagina{
+        display: flex;
+        justify-content: space-around;
+        .link-redes{
+            width: 3.5em;
+            height: 3.5em;
+
+            .imagem-link-footer {
+                padding: 8%;
+                width: 3em;
+                height: 3em;
+                &:hover{
+                    cursor: pointer;
+                    transform: translateY(-3px);
+                    filter: invert(18%) sepia(50%) saturate(6752%) hue-rotate(222deg) brightness(102%) contrast(108%);
+                }
+            }
+        }
+    }
+}
