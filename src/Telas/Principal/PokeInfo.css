@@ -1,7 +1,7 @@
-body {
-  color: #000000;
-  background-color: #ffffff;
-}
-body .div-principal {
-  border: 1px solid #ffffff;
+.poke-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Onest", sans-serif;
 }/*# sourceMappingURL=PokeInfo.css.map */
