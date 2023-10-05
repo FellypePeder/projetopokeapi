@@ -4,4 +4,15 @@
   flex-wrap: wrap;
   justify-content: center;
   font-family: "Onest", sans-serif;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 }/*# sourceMappingURL=PokeInfo.css.map */

@@ -17,20 +17,19 @@
         transform: translate(-50%, -50%);
 
         display: flex;
-        justify-content: center;
-        align-items: center;
 
-        padding: 400px 300px;
+        padding: 0 0 0 2vw;
+        height: 70vh;
+        width: 60vh;
 
-        border: 1px solid white;
-        border-radius: 20px;
         background-color: #ffffff;
+        border-radius: 10px;
 
         .btn-fechar{
             position: fixed;
             top: 0;
             right: 0;
-            margin: 10px;
+            margin: 15px;
 
             font-size: 40px;
 

@@ -13,12 +13,19 @@ function PokeInfo() {
   }, []);
 
   return (
-    <div className="poke-info">
-      {list.map((item) => (
-        // componente que carrega os dados
-        <Pokemon key={item.name} data={item} />
-      ))}
+    <>
+      {/* <div className="botoes">
+        <button className="prox-lista-poke">A</button>
+        <button className="lista-poke-anterior">B</button>
+      </div> */}
+      <div className="poke-info">
+        {list.map((item) => (
+          // componente que carrega os dados
+          <Pokemon key={item.name} data={item} />
+        ))}
     </div>
+    </>
+    
   );
 }
 

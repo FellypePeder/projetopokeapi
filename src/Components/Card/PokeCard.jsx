@@ -10,7 +10,7 @@ export const Pokemon = ({ data }) => {
 
   useEffect(() => {
     axios.get(data.url).then((response) => setDetails(response.data));
-  }, []);
+  }, [data]);
 
   if (details === null) {
     return <div>Carregando...</div>;
@@ -20,7 +20,7 @@ export const Pokemon = ({ data }) => {
     <>
       <div className="card-pokemon">
         <p className="id-poke" >{details.id}</p>
-        <hr />
+        <div className="linha-horizontal"></div>
         <img
           src={details.sprites.front_default}
           className="img-poke"
@@ -28,17 +28,19 @@ export const Pokemon = ({ data }) => {
         />
         <p className="nome-poke">{letraMaiscula(details.name)}</p>
         <p className="vida-poke">
-          <FaHeart className="icone-hp"/>  :{" "}
           {details.stats[0].base_stat}
+          <FaHeart className="icone-hp"/>
         </p>
         <button className="btn-mais-info" onClick={() => setOpenModal(true)}>
-          Mais informações
+          More info
         </button>
       </div>
 
       <PokeModal isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)}>
         <div>
-          <p>{console.log(details)}</p>
+          <h1>{letraMaiscula(details.name)}</h1>
+          <p>{details.types[0].type.name}</p>
+          <p>{details.types.length > 1 ? <p>{details.types[1].type.name}</p> : null}</p>
         </div>
       </PokeModal>
 
@@ -48,8 +50,4 @@ export const Pokemon = ({ data }) => {
 
 function letraMaiscula(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
-function convertUpper(str) {
-  return str.toUpperCase();
 }
