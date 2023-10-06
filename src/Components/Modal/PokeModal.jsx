@@ -8,7 +8,7 @@ export default function PokeModal({ isOpen, setModalOpen, children }) {
         return (
             <div className='poke-fundo-modal'>
                 <div className='poke-modal'>
-                    <div>{children}</div>
+                    <div className='children'>{children}</div>
                     <div className="btn-fechar" onClick={setModalOpen}><GoX /></div>
                 </div>
             </div>

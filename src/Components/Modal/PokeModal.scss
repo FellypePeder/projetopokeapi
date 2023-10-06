@@ -1,3 +1,4 @@
+
 .poke-fundo-modal{
     position: fixed;
     top: 0;
@@ -9,6 +10,46 @@
 
     z-index: 1000;
 
+    .children{
+        .section-poke-type{
+            margin-top: 23px;
+            .poke-type{
+                display: flex;
+                align-items: center;
+    
+                .status-name-poke-type{
+                    font-size: 14px;
+                    margin: 0;
+                }
+    
+                .status-value-poke-type{
+                    font-size: 14px;
+                    pre{
+                        margin: 0;
+                    }
+                }
+            }
+    
+            .linha-horizontal{
+                height: 1px;
+                width: 100%;
+                margin-top: 10px;
+                background-color: black;
+            }
+        }
+
+        .section-poke-status{
+            .div-poke-status{
+                display: flex;
+                
+            }
+
+            .status-poke-value{
+                margin-left: 10px;
+            }
+        }
+    }
+
     .poke-modal{
         color: rgb(0, 0, 0);
         position: fixed;
@@ -18,9 +59,9 @@
 
         display: flex;
 
-        padding: 0 0 0 2vw;
+        padding: 0 0 0 1.5vw;
         height: 70vh;
-        width: 60vh;
+        width: 40vh;
 
         background-color: #ffffff;
         border-radius: 10px;

@@ -7,6 +7,35 @@
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1000;
 }
+.poke-fundo-modal .children .section-poke-type {
+  margin-top: 23px;
+}
+.poke-fundo-modal .children .section-poke-type .poke-type {
+  display: flex;
+  align-items: center;
+}
+.poke-fundo-modal .children .section-poke-type .poke-type .status-name-poke-type {
+  font-size: 14px;
+  margin: 0;
+}
+.poke-fundo-modal .children .section-poke-type .poke-type .status-value-poke-type {
+  font-size: 14px;
+}
+.poke-fundo-modal .children .section-poke-type .poke-type .status-value-poke-type pre {
+  margin: 0;
+}
+.poke-fundo-modal .children .section-poke-type .linha-horizontal {
+  height: 1px;
+  width: 100%;
+  margin-top: 10px;
+  background-color: black;
+}
+.poke-fundo-modal .children .section-poke-status .div-poke-status {
+  display: flex;
+}
+.poke-fundo-modal .children .section-poke-status .status-poke-value {
+  margin-left: 10px;
+}
 .poke-fundo-modal .poke-modal {
   color: rgb(0, 0, 0);
   position: fixed;
@@ -14,9 +43,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  padding: 0 0 0 2vw;
+  padding: 0 0 0 1.5vw;
   height: 70vh;
-  width: 60vh;
+  width: 40vh;
   background-color: #ffffff;
   border-radius: 10px;
 }
