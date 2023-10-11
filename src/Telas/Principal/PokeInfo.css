@@ -2,17 +2,33 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  flex-basis: 0;
   justify-content: center;
   font-family: "Onest", sans-serif;
 }
 
 .botoes {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  flex-direction: row;
+  justify-content: center;
   margin-top: 30px;
-  margin-left: 20px;
-  margin-right: 20px;
+}
+.botoes .volta-pagina {
+  margin-right: 32px;
+  padding: 2em 11.5em;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+}
+.botoes .volta-pagina:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.botoes .avanca-pagina {
+  margin-left: 32px;
+  padding: 2em 11.5em;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+}
+.botoes .avanca-pagina:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
 }/*# sourceMappingURL=PokeInfo.css.map */

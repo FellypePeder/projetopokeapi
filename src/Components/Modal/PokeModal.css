@@ -28,7 +28,12 @@
   height: 1px;
   width: 100%;
   margin-top: 10px;
+  margin-bottom: 20px;
   background-color: black;
+}
+.poke-fundo-modal .children .section-poke-status .section-ataque {
+  border: 1px solid black;
+  margin-top: 1em;
 }
 .poke-fundo-modal .children .section-poke-status .div-poke-status {
   display: flex;

@@ -34,15 +34,21 @@
                 height: 1px;
                 width: 100%;
                 margin-top: 10px;
+                margin-bottom: 20px;
                 background-color: black;
             }
         }
 
         .section-poke-status{
+            .section-ataque{
+                border: 1px solid black;
+                margin-top: 1em;
+            }
             .div-poke-status{
                 display: flex;
                 
             }
+
 
             .status-poke-value{
                 margin-left: 10px;

@@ -48,37 +48,44 @@ export const Pokemon = ({ data }) => {
             <div className="linha-horizontal"></div>
           </section>
 
+          <section style={{marginTop: 20}} className="section-poke-status section-hp">
+            <div className="div-poke-status status-vida"> 
+              <h3>{letraMaiscula(details.stats[0].stat.name)}</h3>
+              <p className="status-poke-value stat-poke-ataque-valor">{details.stats[0].base_stat}</p>
+            </div>
+          </section>
+
           <section className="section-poke-status section-ataque">
             <div className="div-poke-status status-ataque"> 
-              <h3 style={{marginTop: 10}}>{letraMaiscula(details.stats[1].stat.name)}</h3>
+              <h3>{letraMaiscula(details.stats[1].stat.name)}</h3>
               <p className="status-poke-value stat-poke-ataque-valor">{details.stats[1].base_stat}</p>
             </div>
           </section>
 
           <section className="section-poke-status section-defense">
             <div className="div-poke-status status-defense"> 
-              <h3 style={{marginTop: 10}}>{letraMaiscula(details.stats[2].stat.name)}</h3>
+              <h3>{letraMaiscula(details.stats[2].stat.name)}</h3>
               <p className="status-poke-value stat-poke-ataque-valor">{details.stats[2].base_stat}</p>
             </div>
           </section>
 
           <section className="section-poke-status section-special-attack">
             <div className="div-poke-status status-special-attack"> 
-              <h3 style={{marginTop: 10}}>{letraMaiscula(details.stats[3].stat.name)}</h3>
+              <h3>{letraMaiscula(details.stats[3].stat.name)}</h3>
               <p className="status-poke-value stat-poke-ataque-valor">{details.stats[3].base_stat}</p>
             </div>
           </section>
 
           <section className="section-poke-status section-special-defense">
             <div className="div-poke-status status-special-defense"> 
-              <h3 style={{marginTop: 10}}>{letraMaiscula(details.stats[4].stat.name)}</h3>
+              <h3>{letraMaiscula(details.stats[4].stat.name)}</h3>
               <p className="status-poke-value stat-poke-ataque-valor">{details.stats[4].base_stat}</p>
             </div>
           </section>
 
           <section className="section-poke-status section-speed">
             <div className="div-poke-status status-speed"> 
-              <h3 style={{marginTop: 10}}>{letraMaiscula(details.stats[5].stat.name)}</h3>
+              <h3>{letraMaiscula(details.stats[5].stat.name)}</h3>
               <p className="status-poke-value stat-poke-ataque-valor">{details.stats[5].base_stat}</p>
             </div>
           </section>
